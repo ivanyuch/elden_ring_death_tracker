@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class DeathCounter {
   public static void main(String[] args) {
@@ -26,17 +27,50 @@ public class DeathCounter {
       System.err.println("Error reading the file: " + e.getMessage());
     }
 
+    boolean happenedOnce = true;
+    Scanner scanner = new Scanner(System.in);
+
     while (true) {
+      // Display the welcome message one time only
+      while (happenedOnce) {
+        System.out.println("Welcome to the Elden Ring Death Counter!");
+        System.out.println("Please select a command:");
+        happenedOnce = false;
+      }
       printCommands();
+      String command = scanner.nextLine().trim().toLowerCase();
+      switch (command) {
+        // case "show":
+        //   commandShow();
+        //   break;
+        // case "select":
+        //   commandSelect();
+        //   break;
+        // case "help":
+        //   commandHelp();
+        //   break;
+        case "exit":
+          commandExit();
+          scanner.close();
+          break;
+        default:
+          System.out.println("\nUnknown command. Please select from listed commands:");
+      }
+
     }
   }
 
   public static void printCommands () {
-    System.out.println("\nCommands:");
-    System.out.println("\n'show': Show all deaths");
-    System.out.println("\n'select': select a boss to track");
-    System.out.println("\n'help': provides more information about the commands");
-    System.out.println("\n'exit': exit the program");
+    System.out.println("'Show' Show all deaths");
+    System.out.println("'Select' select a boss to track");
+    System.out.println("'Help' provides more information about the commands");
+    System.out.println("'Exit' exit the program");
+    System.out.print("\nEnter command: ");
+  }
+
+  public static void commandExit() {
+    System.out.println("Exiting the program...");
+    System.exit(0);
   }
   
 }
