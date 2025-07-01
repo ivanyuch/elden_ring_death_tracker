@@ -1,1 +1,14 @@
-0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Margit the Fell Omen, true, 0
+Godrick the Grafted, false, 0
+Red Wolf of Radagon, false, 0
+Rennala Queen of the Full Moon, false, 0
+Starscourge Radahn, false, 0
+Rykard Lord of Blasphemy, false, 0
+Godfrey First Elden Lord (Golden Shade), false, 0
+Morgott the Omen King, false, 0
+Fire Giant, false, 0
+Godskin Duo, false, 0
+Maliketh the Black Blade, false, 0
+Sir Gideon Ofnir the All-Knowing, false, 0
+Godfrey First Elden Lord, false, 0
+Radagon of the Golden Order, false, 0 

@@ -74,3 +74,44 @@ public class DeathCounter {
   }
   
 }
+
+class BossInfo {
+  private String name;
+  private boolean activated;
+  private int deaths;
+
+  public BossInfo(String name, boolean activated, int deaths) {
+    this.name = name;
+    this.activated = activated;
+    this.deaths = deaths;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public boolean getActivated() {
+    return activated;
+  }
+
+  public int getDeaths() {
+    return deaths;
+  }
+
+  public int addDeath() {
+    return ++deaths;
+  }
+
+  public void setDeaths(int deaths) {
+    this.deaths = deaths;
+  }
+
+  public void setActivated(boolean activated) {
+    this.activated = activated;
+  }
+
+  @Override
+  public String toString() {
+    return name + ": " + deaths + " deaths";
+  }
+}
