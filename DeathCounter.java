@@ -6,11 +6,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DeathCounter {
+
+  // Initialize a static map to store boss information
+  static Map <String, BossInfo> bossMap = new HashMap<>();
   public static void main(String[] args) {
     // Accesses the deaths.txt file and reads the boss information
     try (BufferedReader reader = new BufferedReader(new FileReader("deaths.txt"))) {
-      // Initialize a map to store boss information
-      Map <String, BossInfo> bossMap = new HashMap<>();
 
       // Reads each line in the file, records in map. Expects 14 lines of data
       for (int i = 0; i < 14; i++) {
@@ -41,9 +42,9 @@ public class DeathCounter {
       printCommands();
       String command = scanner.nextLine().trim().toLowerCase();
       switch (command) {
-        // case "show":
-        //   commandShow();
-        //   break;
+        case "show":
+          commandShow();
+          break;
         // case "select":
         //   commandSelect();
         //   break;
@@ -67,6 +68,19 @@ public class DeathCounter {
     System.out.println("'Help' provides more information about the commands");
     System.out.println("'Exit' exit the program");
     System.out.print("\nEnter command: ");
+  }
+
+  public static void commandShow() {
+    // This method would display all the deaths recorded for each boss, and formats it to show output nicely.
+    System.out.println("\nCurrent Boss Deaths:");
+    System.out.println("----------------------------");
+    for (BossInfo boss : bossMap.values()) {
+      // Only show bosses that have been activated
+      if (boss.getActivated()) {
+        System.out.println(boss);
+      }
+    }
+    System.out.println("----------------------------\n");
   }
 
   public static void commandExit() {
