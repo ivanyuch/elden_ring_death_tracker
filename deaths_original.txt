@@ -1,14 +1,14 @@
-Margit, the Fell Omen;true;0
-Godrick the Grafted;false;0
-Red Wolf of Radagon;false;0
-Rennala, Queen of the Full Moon;false;0
-Starscourge Radahn;false;0
-Rykard, Lord of Blasphemy;false;0
-Godfrey, First Elden Lord (Golden Shade);false;0
-Morgott, the Omen King;false;0
-Fire Giant;false;0
-Godskin Duo;false;0
-Maliketh, the Black Blade;false;0
-Sir Gideon Ofnir, the All-Knowing;false;0
-Godfrey, First Elden Lord;false;0
-Radagon of the Golden Order;false;0
+Margit, the Fell Omen;true;0;margit
+Godrick the Grafted;false;0;godrick
+Red Wolf of Radagon;false;0;wolf
+Rennala, Queen of the Full Moon;false;0;rennala
+Starscourge Radahn;false;0;radahn
+Rykard, Lord of Blasphemy;false;0;rykard
+Godfrey, First Elden Lord (Golden Shade);false;0;shade
+Morgott, the Omen King;false;0;morgott
+Fire Giant;false;0;giant
+Godskin Duo;false;0;duo
+Maliketh, the Black Blade;false;0;maliketh
+Sir Gideon Ofnir, the All-Knowing;false;0;gideon
+Godfrey, First Elden Lord;false;0;godfrey
+Radagon of the Golden Order;false;0;radagon
